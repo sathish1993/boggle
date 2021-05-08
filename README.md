@@ -1,26 +1,46 @@
 # boggle
 
 The game of Boggle is played on a grid of letters. Players compete to find as many words as possible within a given time limit, based on words from a dictionary. 
+
 Rules:
-Words must be in a specified dictionary.
-Letters are in a rectangular grid, N x M.
-Words can be formed by going to adjacent lerrers horizontally, vertically, or diagonally.
-The letter at a grid square can be used at most once in a given word.
-A letter in a grid square can be used in multiple, different words.
+
+1. Words must be in a specified dictionary.
+
+2. Letters are in a rectangular grid, N x M.
+
+3. Words can be formed by going to adjacent lerrers horizontally, vertically, or diagonally.
+
+4. The letter at a grid square can be used at most once in a given word.
+
+5. A letter in a grid square can be used in multiple, different words.
+
 For the purposes of this exercise, assume there's a dictionary "object", with a single method in whatever language you choose
+
 bool IsWord(string) 
+
 Write a function that takes an NxM grid of letters, and a dictionary object, and returns all of the words in that grid
-Some examples:
+
 Given the board
-H N S E
+
+H N S E 
+
 A R G U
+
 B R U S
+
 F E T I
+
 and the usual english dictionary in /usr/share/dict/words on a mac, and either there or in /usr/dict/words on a linux machine
-sugar is not a valid word, even though they are all connected, you can only get sugra or usgra with this board
-true is a word (even though the line of the letters goes criss-cross)
-sis is not a valid word, since it would have to use the same 's' twice
-brush is not a valid word, since the s and h are not adjacent
+
+Examples:
+
+1. sugar is not a valid word, even though they are all connected, you can only get sugra or usgra with this board
+
+2. true is a word (even though the line of the letters goes criss-cross)
+
+3. sis is not a valid word, since it would have to use the same 's' twice
+
+4. brush is not a valid word, since the s and h are not adjacent
 
 
 
