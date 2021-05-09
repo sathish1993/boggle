@@ -94,3 +94,4 @@ Pending Tasks:
 1. proper logging
 2. move hardcodes to properties
 3. more unittests
+4. venv/requirements.txt
