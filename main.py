@@ -22,6 +22,7 @@ def init_boggle_game(boggle_obj, eng_words, boggle_grid):
 	print('Total time taken {}s'.format((end_time - start_time) / 1000.0))
 	return valid_words
 
+
 def main():
 
 	if len(sys.argv) != 2:
@@ -32,9 +33,8 @@ def main():
 	boggle_grid = boggle_util_obj.read_input_file()
 	eng_words = boggle_util_obj.get_english_dict_words()		
 	boggle_obj = boggle.Boggle()
-
-	valid_words = init_boggle_game(boggle_obj, eng_words, boggle_grid)
 	
+	valid_words = init_boggle_game(boggle_obj, eng_words, boggle_grid)
 	boggle_util_obj.gen_valid_boggle_words(valid_words)
 
 

@@ -4,9 +4,10 @@ class Boggle(object):
 
 	"""docstring for Boggle"""
 	def __init__(self):
-		super(Boggle, self).__init__()
+		#super(Boggle, self).__init__()
 		self.my_queue = None
 		self.direction_check = 1
+
 
 	# Method to find the starting char of given input string
 	def find_match_char(self, i, j, r_len, c_len, word_index, word, temp_grid):
@@ -80,7 +81,6 @@ class Boggle(object):
 			return bool(True), r, c
 
 		return bool(False), i, j
-
 
 
 	# Method to check if given input string is part of boggle

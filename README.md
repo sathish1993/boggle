@@ -61,6 +61,10 @@ think about how to test the code... if you have time to write some unit tests, g
 Do you have any time/space complexity restrictions?
 no time/space complexity restrictions, but do think about the complexity. I'll ask about it :slightly_smiling_face:
 
+To Run:
+
+1. main_logic: python main.py /Users/sathish/Desktop/boggle/input_grid.txt
+2. unit_tests: python boggle_tests/boggle_ut.py
 
 Assumptions:
 
@@ -83,3 +87,10 @@ Space Complexity: O(V)
 6. if found, increase word_index count
 7. grid[row, col] = '_' to avoid cycles
 8. repeat the process until all chars of given string is found or we go out space in grid
+
+
+Pending Tasks:
+
+1. proper logging
+2. move hardcodes to properties
+3. more unittests
