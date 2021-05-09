@@ -61,6 +61,12 @@ think about how to test the code... if you have time to write some unit tests, g
 Do you have any time/space complexity restrictions?
 no time/space complexity restrictions, but do think about the complexity. I'll ask about it :slightly_smiling_face:
 
+
+Assumptions:
+
+1. All input strings and boogle grid is in same case
+2. output is populated in file
+
 Basic Algorithm isWord(string):
 
 It is graph traversal problem. we will use Breadth First Search(BFS)
