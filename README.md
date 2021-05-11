@@ -69,7 +69,8 @@ To Run:
 Assumptions:
 
 1. All input strings and boogle grid is in same case
-2. output is populated in file
+2. Output is populated in file
+3. All chars are with 26 alphabets
 
 Basic Algorithm isWord(string):
 
@@ -88,9 +89,15 @@ Space Complexity: O(V)
 7. grid[row, col] = '_' to avoid cycles
 8. repeat the process until all chars of given string is found or we go out space in grid
 
+Other Approaches:
+
+1. DFS to traverse using stack
+2. Using trie, store all the words from dict to trie, find chars at each level and check if it is in boggle grid
+
 
 Pending Tasks:
 
 1. proper logging
 2. move hardcodes to properties
 3. more unittests
+4. venv/requirements.txt
