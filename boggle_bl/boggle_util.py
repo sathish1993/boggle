@@ -25,25 +25,7 @@ class BoggleUti(object):
 		for line in in_file.readlines():	
 			self.boggle_grid.append(line.split())
 		return self.boggle_grid
-
-
-	# Util method to read dict from /usr/share/dict/words on a mac, and /usr/dict/words on linux
-	def get_english_dict_words(self):
-		dict_path = None
-		eng_words = []
-
-		if sys.platform == 'linux' or sys.platform == "linux2":
-			dict_path = '/usr/dict/words'
-		elif sys.platform == 'darwin':
-			dict_path = '/usr/share/dict/words'
-
-		if not self.check_if_path_exists(dict_path):
-			sys.exit(-1)
-
-		in_file = open(dict_path, 'r')
-		for line in in_file.readlines():					
-			eng_words.append(line.strip())		
-		return eng_words
+	
 
 
 	#Util method to print findings in a txt file
