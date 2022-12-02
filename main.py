@@ -9,7 +9,7 @@ import time
 import datetime
 import copy
 
-# Method to initiate boggle
+# Method to initiate boggle1
 def get_all_words(boggle_obj, boggle_grid, dict_obj, combo_list):
 	valid_words = []	
 	count = 0
